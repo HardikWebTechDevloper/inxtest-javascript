@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #ff00ff;
+}
+
+.table-cell {
+    position: relative;
+    padding: 5px;
+    border: 1px solid #6e3078;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -80%);
+    background-color: #8803a6;
+    color: #ffffff;
+    padding: 5px;
+    opacity: 75%;
+    white-space: nowrap;
+    z-index: 100;
+    cursor: default;
+}
